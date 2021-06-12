@@ -1,0 +1,18 @@
+body {
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+}
+
+#weather {
+    text-align: right;
+    padding: 0.5em;
+    font-size: 0.9em;
+}
+#clock {
+   margin-top: 10em;
+}
+
+.hidden {
+    display: none;
+}
