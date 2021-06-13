@@ -23,11 +23,23 @@ const quotes = [
     quote: "Epic moment.",
     author: "James Han",
   },
+  {
+    quote: "Subscribe to JoelPigeon.",
+    author: "James Han",
+  },
+  {
+    quote: "Chicken Nuggets.",
+    author: "James Han",
+  },
+  {
+    quote: "Weedeater. Randomly Generated.",
+    author: "James Han",
+  },
 ];
 
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-quote.innerText = todaysQuote.quote;
-author.innerText = `- ${todaysQuote.author}`;
+quote.innerText = `"${todaysQuote.quote}"`;
+author.innerText = ` - ${todaysQuote.author}`;

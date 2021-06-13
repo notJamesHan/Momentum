@@ -1,18 +1,119 @@
+body,
+html {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
 body {
-    color: white;
-    font-family: 'Fira Sans', sans-serif;
-    text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-y: hidden;
 }
 
-#weather {
-    text-align: right;
-    padding: 0.5em;
-    font-size: 0.9em;
-}
 #clock {
-   margin-top: 10em;
+  font-size: 180px;
+  line-height: normal;
+  margin: 0;
 }
 
+#login-form {
+  margin: 0 0 10px 0;
+}
+
+.logininput {
+  color: white;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 3px solid white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.login {
+  text-align: center;
+  text-decoration: none;
+  padding: 0.35em 1.2em;
+  margin-left: 10px;
+  background-color: white;
+  border: none;
+}
+
+#greeting {
+  margin: 0 0 10px 0;
+  font-size: 40px;
+}
+
+.todolists {
+  margin: 40px 0 0 0;
+  color: white;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 3px solid white;
+  font-size: 20px;
+  text-align: center;
+}
+
+#todo-list {
+  list-style-type: none;
+  text-align: center;
+}
+
+#todo-list li{
+    margin: 0 40px 0 0;
+    padding: 2px;
+    font-size: 20px;
+}
+
+#todo-list button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+#quote {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+  font-size: 0.9em;
+}
+#weather {
+  font-style: italic;
+  font-size: 12px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 0.9em;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+#made {
+    position: absolute;
+    bottom: 12px;
+    right: 25px;
+    font-style: italic;
+    text-align: center;
+    font-size: 0.8em;
+}
 .hidden {
-    display: none;
+  display: none;
 }

@@ -6,7 +6,7 @@ const bgImage = document.createElement("img");
 bgImage.src = `img/${chosenImage}`;
 
 //document.body.appendChild(bgImage);
-document.body.style.background =
+document.body.style.backgroundImage =
   "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('" +
   bgImage.src +
   "')";
